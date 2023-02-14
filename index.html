@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page flex">
+      <div class="sidebar p-20 bg-white">
+        <h3 class="txt-c relative">Elzero</h3>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="active p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="hide-mobile">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="hide-mobile">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="hide-mobile">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="hide-mobile">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="courses.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="hide-mobile">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="friends.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="hide-mobile">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="files.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="hide-mobile">Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="plans.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="hide-mobile">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full">
+        <nav class="p-15 between-flex bg-white">
+          <div class="search relative">
+            <input
+              class="p-10 rad-10"
+              type="text"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="icons flex align-items">
+            <span class="relative notification">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="imgs\\avatar.png" alt="" />
+          </div>
+        </nav>
+        <h1 class="relative">Dashboard</h1>
+        <div class="wrapper grid gap-20 m-20">
+          <div class="welcome rad-10 bg-white txt-c-mobile">
+            <div class="intro bg-eee flex space-between p-20">
+              <div>
+                <h2>Welcome</h2>
+                <p class="c-grey">Ahmed</p>
+              </div>
+              <img class="hide-mobile" src="imgs\\welcome.png" alt="" />
+            </div>
+            <img class="avatar" src="imgs\avatar.png" alt="" />
+            <div class="body p-20 txt-c flex">
+              <div>
+                Ahmed Nasser
+                <p class="c-grey mt-10">Developer</p>
+              </div>
+              <div>
+                80
+                <p class="c-grey mt-10">Projects</p>
+              </div>
+              <div>
+                $8500
+                <p class="c-grey mt-10">Earned</p>
+              </div>
+            </div>
+            <a
+              href="profile.html"
+              class="visit btn-shape table bg-blue c-white fs-14"
+              >Profile</a
+            >
+          </div>
+          <div class="quick-draft p-20 rad-10 bg-white">
+            <h2 class="mb-10">Quick Draft</h2>
+            <p class="c-grey fs-15 mb-20">Write A Draft For Your Ideas</p>
+            <form action="">
+              <input
+                type="text"
+                placeholder="Title"
+                class="p-10 bg-eee w-full rad-6 mb-20"
+              />
+              <textarea
+                placeholder="Your Thoughts"
+                class="bg-eee w-full p-10 rad-6 mb-20"
+              ></textarea>
+              <input
+                type="submit"
+                value="Save"
+                class="btn-shape table bg-blue c-white fs-14"
+              />
+            </form>
+          </div>
+          <div class="targets p-20 rad-10 bg-white">
+            <h2 class="mb-10">Yearly Targets</h2>
+            <p class="c-grey fs-15 mb-20">Targets Of The Year</p>
+            <div class="target mb-20 center-flex">
+              <div class="icon center-flex">
+                <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+              </div>
+              <div class="details">
+                <p class="fs-14 c-grey">Money</p>
+                <p class="mt-5 mb-10 fw-bold">$20.000</p>
+                <div class="progress-handler relative w-full">
+                  <span style="width: 80%">
+                    <span class="c-white rad-6">80%</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="target mb-20 center-flex">
+              <div class="icon center-flex">
+                <i class="fa-solid fa-code fa-lg c-orange"></i>
+              </div>
+              <div class="details">
+                <p class="fs-14 c-grey">Projects</p>
+                <p class="mt-5 mb-10 fw-bold">24</p>
+                <div class="progress-handler relative w-full">
+                  <span style="width: 55%">
+                    <span class="c-white rad-6">55%</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="target mb-20 center-flex">
+              <div class="icon center-flex">
+                <i class="fa-solid fa-user fa-lg c-green"></i>
+              </div>
+              <div class="details">
+                <p class="fs-14 c-grey">Team</p>
+                <p class="mt-5 mb-10 fw-bold">12</p>
+                <div class="progress-handler relative w-full">
+                  <span style="width: 75%">
+                    <span class="c-white rad-6">75%</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
