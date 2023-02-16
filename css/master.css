@@ -156,7 +156,6 @@ nav .icons img {
 }
 @media (max-width: 767px) {
   .content .wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
     margin: 20px 10px;
   }
@@ -283,4 +282,30 @@ nav .icons img {
 }
 .targets .target:last-of-type .progress-handler > span span::before {
   border-top-color: var(--green-color);
+}
+.tickets > p {
+}
+.tickets .box {
+  border: 1px solid #ccc;
+  width: calc(50% - 10px);
+}
+@media (max-width: 767px) {
+  .tickets .box {
+    width: 100%;
+  }
+}
+.latest-news .news:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.latest-news img {
+  width: 100px;
+}
+.latest-news .info {
+  flex: 1;
+}
+.latest-news .info h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
 }
