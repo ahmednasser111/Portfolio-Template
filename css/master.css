@@ -299,8 +299,18 @@ nav .icons img {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .latest-news .news {
+    gap: 0;
+  }
+}
 .latest-news img {
   width: 100px;
+}
+@media (max-width: 767px) {
+  .latest-news img {
+    margin-bottom: 5px;
+  }
 }
 .latest-news .info {
   flex: 1;
@@ -308,4 +318,9 @@ nav .icons img {
 .latest-news .info h3 {
   margin: 0 0 6px;
   font-size: 16px;
+}
+@media (max-width: 767px) {
+  .latest-news .news .label {
+    margin-top: 10px;
+  }
 }

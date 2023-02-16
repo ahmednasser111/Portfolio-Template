@@ -144,3 +144,8 @@
     display: block;
   }
 }
+@media (max-width: 767px) {
+  .direction-mobile {
+    flex-direction: column;
+  }
+}
