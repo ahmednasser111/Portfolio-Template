@@ -323,3 +323,21 @@ nav .icons img {
     margin-top: 10px;
   }
 }
+.latest-tasks .task:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.latest-tasks .task:nth-last-of-type(2) {
+  opacity: 0.3;
+}
+.latest-tasks .task:nth-last-of-type(2) .info {
+  text-decoration: line-through;
+}
+.latest-tasks .task i {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.latest-tasks .task i:hover {
+  color: var(--red-color);
+}
