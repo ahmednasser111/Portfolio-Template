@@ -16,8 +16,8 @@
 .mt-10 {
   margin-top: 10px;
 }
-.mb-10 {
-  margin-bottom: 10px;
+.mt-15 {
+  margin-top: 15px;
 }
 .mt-5 {
   margin-top: 5px;
@@ -25,8 +25,20 @@
 .mb-5 {
   margin-bottom: 5px;
 }
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
 .mb-20 {
   margin-bottom: 20px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.pt-15 {
+  padding-top: 15px;
 }
 .block {
   display: block;
