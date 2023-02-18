@@ -341,3 +341,11 @@ nav .icons img {
 .latest-tasks .task i:hover {
   color: var(--red-color);
 }
+.latest-uploads .upload-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.latest-uploads .upload-item .info img {
+  width: 40px;
+}
