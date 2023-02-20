@@ -405,3 +405,13 @@ nav .icons img {
 .remainders .remainder .red {
   border-left: 2px solid var(--red-color);
 }
+.latest-post .head img {
+  width: 48px;
+}
+.latest-post .body {
+  min-height: 140px;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  line-height: 1.8;
+}
