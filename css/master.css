@@ -349,3 +349,42 @@ nav .icons img {
 .latest-uploads .upload-item .info img {
   width: 40px;
 }
+.last-project ul::before {
+  content: "";
+  position: absolute;
+  left: 11.5px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue-color);
+}
+.last-project ul li .circle {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  background-color: var(--blue-color);
+  z-index: 1;
+}
+.last-project ul li:last-child .circle,
+.last-project ul li:nth-last-child(2) .circle {
+  background-color: white;
+}
+.last-project ul li:nth-last-child(2) .circle {
+  animation: change-background 0.8s infinite alternate;
+}
+.last-project img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+  width: 160px;
+}
+@keyframes change-background {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: white;
+  }
+}
