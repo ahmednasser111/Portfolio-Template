@@ -388,3 +388,20 @@ nav .icons img {
     background-color: white;
   }
 }
+.remainders .remainder .circle {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+}
+.remainders .remainder .blue {
+  border-left: 2px solid var(--blue-color);
+}
+.remainders .remainder .green {
+  border-left: 2px solid var(--green-color);
+}
+.remainders .remainder .orange {
+  border-left: 2px solid var(--orange-color);
+}
+.remainders .remainder .red {
+  border-left: 2px solid var(--red-color);
+}

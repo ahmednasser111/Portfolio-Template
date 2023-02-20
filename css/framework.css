@@ -43,6 +43,9 @@
 .pt-15 {
   padding-top: 15px;
 }
+.pl-15 {
+  padding-left: 15px;
+}
 .block {
   display: block;
 }
@@ -113,6 +116,15 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
+.bg-red {
+  background-color: var(--red-color);
+}
 .txt-c {
   text-align: center;
 }
@@ -139,6 +151,9 @@
 }
 .rad-10 {
   border-radius: 10px;
+}
+.rad-half {
+  border-radius: 50%;
 }
 .w-full {
   width: 100%;
