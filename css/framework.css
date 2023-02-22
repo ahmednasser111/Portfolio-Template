@@ -161,6 +161,9 @@
 .w-full {
   width: 100%;
 }
+.h-full {
+  height: 100%;
+}
 .btn-shape {
   padding: 4px 10px;
   border-radius: 6px;
