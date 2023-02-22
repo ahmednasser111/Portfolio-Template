@@ -459,3 +459,34 @@ nav .icons img {
 .social-media .box:last-of-type a {
   background-color: #0077b5;
 }
+
+.projects .responsive-table {
+  overflow-x: auto;
+}
+.projects table {
+  border-spacing: 0;
+  min-width: 1000px;
+}
+.projects table td {
+  padding: 15px;
+}
+.projects table thead td {
+  font-weight: bold;
+  background-color: #eee;
+}
+.projects table tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.3s;
+}
+.projects table tbody tr:hover td {
+  background-color: #faf7f7;
+}
+.projects table img {
+  width: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.projects table img:not(:first-child) {
+  margin-left: -20px;
+}
