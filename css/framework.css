@@ -188,3 +188,6 @@
     flex-direction: column;
   }
 }
+.border-ccc {
+  border: 1px solid #ccc;
+}
