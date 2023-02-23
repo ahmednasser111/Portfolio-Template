@@ -502,3 +502,51 @@ nav .icons img {
 .projects table img:not(:first-child) {
   margin-left: -20px;
 }
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.switch {
+  width: 78px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.checkbox:checked + .switch {
+  background-color: var(--blue-color);
+}
+.switch:before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  position: absolute;
+  color: #aaa;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: 0.3s;
+  top: 4px;
+  left: 4px;
+}
+.checkbox:checked + .switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-color);
+}
+.settings-page .site-control .info p {
+  margin-bottom: 1em;
+}
+.settings-page textarea {
+  min-height: 150px;
+  border: 1px solid #ccc;
+}

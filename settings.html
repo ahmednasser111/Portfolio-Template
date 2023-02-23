@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page flex">
+      <div class="sidebar p-20 bg-white relative">
+        <h3 class="txt-c relative">Ahmed</h3>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="hide-mobile">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="active p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="hide-mobile">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="hide-mobile">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="hide-mobile">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="courses.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="hide-mobile">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="friends.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="hide-mobile">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="files.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="hide-mobile">Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="plans.html"
+              class="p-10 c-black fs-14 flex align-items rad-6"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="hide-mobile">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full">
+        <nav class="p-15 between-flex bg-white">
+          <div class="search relative">
+            <input
+              class="p-10 rad-10"
+              type="text"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="icons flex align-items">
+            <span class="relative notification">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="imgs\\avatar.png" alt="" />
+          </div>
+        </nav>
+        <h1 class="relative">Settings</h1>
+        <div class="settings-page grid gap-20 m-20">
+          <div class="site-control bg-white p-20 rad-10">
+            <h2 class="mb-10">Site Control</h2>
+            <p class="mb-20 c-grey fs-15">
+              Control The Website If There Is Maintenance
+            </p>
+            <div class="between-flex mb-15">
+              <div class="info">
+                <span>Website Control</span>
+                <p class="c-grey fs-13 mt-5">
+                  Open/Close Website And Type The Reason
+                </p>
+              </div>
+              <label>
+                <input class="checkbox" type="checkbox" name="" id="" checked />
+                <div class="switch relative"></div>
+              </label>
+            </div>
+            <textarea
+              placeholder="Close Message Content"
+              class="rad-6 p-10 block w-full"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
