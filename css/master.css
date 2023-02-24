@@ -563,3 +563,12 @@ nav .icons img {
   background-color: #f0f4f8;
   color: #bbb;
 }
+.security-info .box {
+  padding-bottom: 15px;
+}
+.security-info .box:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.security-info .info p {
+  margin-bottom: 1em;
+}
