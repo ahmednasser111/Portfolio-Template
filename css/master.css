@@ -589,3 +589,44 @@ nav .icons img {
 .social-info .row:focus-within i {
   color: black;
 }
+.widgets-control .control input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.widgets-control .control label {
+  cursor: pointer;
+  padding-left: 30px;
+}
+.widgets-control .control label::before,
+.widgets-control .control label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border-radius: 4px;
+  margin-top: -9px;
+}
+
+.widgets-control .control label::before {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--grey-color);
+}
+.widgets-control .control label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  background-color: var(--blue-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  transition: 0.3s;
+  transform: scale(0) rotate(360deg);
+}
+.widgets-control .control input:checked + label::after {
+  transform: scale(1);
+}
