@@ -107,11 +107,21 @@ textarea {
     margin-right: 0;
   }
 }
+.content {
+  overflow: hidden;
+}
 .content nav .search input {
   border: 1px solid #ccc;
   width: 160px;
   padding-left: 30px;
   margin-left: 5px;
+  transition: 0.3s;
+}
+.content nav .search input:focus {
+  width: 200px;
+}
+.content nav .search input:focus::placeholder {
+  opacity: 0;
 }
 .content nav .search::before {
   font-family: var(--fa-style-family-classic);
@@ -139,9 +149,7 @@ nav .icons img {
   height: 32px;
   margin-left: 15px;
 }
-.content {
-  overflow: hidden;
-}
+
 .content h1 {
   margin: 20px 20px 40px;
 }
@@ -599,7 +607,6 @@ nav .icons img {
 }
 .widgets-control .control label::before,
 .widgets-control .control label::after {
-  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -608,6 +615,7 @@ nav .icons img {
 }
 
 .widgets-control .control label::before {
+  content: "";
   width: 14px;
   height: 14px;
   border: 2px solid var(--grey-color);
@@ -629,4 +637,61 @@ nav .icons img {
 }
 .widgets-control .control input:checked + label::after {
   transform: scale(1);
+}
+.backup input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.backup .date label {
+  cursor: pointer;
+  padding-left: 30px;
+}
+.backup .date label::before,
+.backup .date label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.backup .date label::before {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--grey-color);
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+}
+.backup .date input:checked + label::before {
+  border-color: var(--blue-color);
+}
+.backup .date label::after {
+  background-color: var(--blue-color);
+  width: 12px;
+  height: 12px;
+  transition: 0.3s;
+  left: 5px;
+  top: 4.5px;
+  transform: scale(0);
+}
+.backup .date input:checked + label::after {
+  transform: scale(1);
+}
+.backup .servers {
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+@media (max-width: 767px) {
+  .backup .servers {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+.backup .servers .server {
+  border: 2px solid #eee;
+}
+.backup .servers .server label {
+  cursor: pointer;
+}
+.backup .servers input:checked + .server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
 }
