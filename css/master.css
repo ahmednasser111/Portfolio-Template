@@ -695,3 +695,21 @@ nav .icons img {
   border-color: var(--blue-color);
   color: var(--blue-color);
 }
+.profile-page .overview .avatar-box img {
+  width: 120px;
+}
+.profile-page .overview .avatar-box .level {
+  height: 6px;
+  width: 70%;
+  margin: auto;
+}
+.profile-page .overview .avatar-box .level span {
+  position: absolute;
+  left: 0;
+  width: 70%;
+  height: 100%;
+}
+.profile-page .overview .info h4 {
+  font-weight: normal;
+  padding-bottom: 10px;
+}
