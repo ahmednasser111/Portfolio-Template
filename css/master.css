@@ -739,3 +739,58 @@ nav .icons img {
 .profile-page .checkbox:checked + .switch::before {
   left: 60px;
 }
+@media (max-width: 767px) {
+  .profile-page .overview .info label {
+    display: table;
+    margin: auto;
+  }
+}
+.profile-page .other-data .my-skills {
+  flex: 1;
+}
+.profile-page .other-data .my-skills .skill-row {
+  padding: 15px 0;
+}
+.profile-page .other-data .my-skills .skill-row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+@media (max-width: 767px) {
+  .profile-page .other-data .my-skills .skill-row {
+    justify-content: center;
+  }
+}
+.profile-page .other-data .activities {
+  flex: 2;
+}
+.profile-page .other-data .activities .activity {
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .profile-page .other-data .activities .activity {
+    gap: 15px;
+  }
+}
+.profile-page .other-data .activities .activity:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.profile-page .other-data .activities .activity img {
+  width: 64px;
+}
+.profile-page .other-data .activities .activity .info {
+  flex: 1;
+}
+@media (max-width: 767px) {
+  .profile-page .other-data .activities .activity .info {
+    gap: 15px;
+  }
+}
+.profile-page .other-data .activities .activity .data {
+  text-align: right;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .profile-page .other-data .activities .activity .data {
+    text-align: left;
+    margin-left: 0;
+  }
+}
