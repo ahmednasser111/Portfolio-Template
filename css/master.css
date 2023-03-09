@@ -794,3 +794,45 @@ nav .icons img {
     margin-left: 0;
   }
 }
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.projects-page .project .date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.projects-page .project h4 {
+  font-weight: normal;
+}
+.projects-page .project .team {
+  margin-top: 45px;
+}
+.projects-page .project .team img {
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+}
+.projects-page .project .team img:not(:first-child) {
+  margin-left: -20px;
+}
+.projects-page .project .team img:hover {
+  z-index: 100;
+}
+.projects-page .project .desc {
+  text-align: right;
+  border-top: 1px solid #eee;
+}
+.projects-page .project .stats {
+  border-top: 1px solid #eee;
+}
+.projects-page .project .stats .progress-handler {
+  width: 260px;
+  height: 8px;
+}
+.projects-page .project .stats .progress-handler span {
+  position: absolute;
+  height: 100%;
+}
