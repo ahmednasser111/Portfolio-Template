@@ -968,12 +968,19 @@ nav .icons img {
   margin: 15px auto 0;
   padding: 10px 15px;
 }
+.files-page .files-stats .upload:hover {
+  background-color: var(--blue-alt-color);
+}
+.files-page .files-stats .upload:hover i {
+  animation: up-down infinite 0.8s;
+}
 .files-page .files-content {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   flex: 1;
 }
 .files-page .files-content .file .download {
   position: absolute;
+  transition: 0.3s;
 }
 .files-page .files-content .file img {
   width: 64px;
@@ -984,4 +991,61 @@ nav .icons img {
 }
 .files-page .files-content .file .info {
   border-top: 1px solid #eee;
+}
+@keyframes up-down {
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: minmax(250px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.plans-page plan .top {
+  border: 3px solid white;
+  outline: 3px solid transparent;
+}
+.plans-page plan:first-child .top {
+  outline-color: var(--green-color);
+}
+.plans-page plan:nth-child(2) .top {
+  outline-color: var(--blue-color);
+}
+.plans-page plan:last-child .top {
+  outline-color: var(--orange-color);
+}
+.plans-page plan .top .price {
+  display: table;
+  margin: auto;
+  font-size: 40px;
+}
+.plans-page plan .top .price::before {
+  content: "$";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  font-size: 25px;
+}
+.plans-page plan .features {
+  margin: 1em 0;
+}
+.plans-page plan .features .feature {
+  border-bottom: 1px solid #eee;
+}
+.plans-page plan .features .feature .yes,
+.plans-page plan .features .feature .no {
+  font-size: 18px;
+}
+.plans-page plan .features .feature .yes {
+  color: var(--green-color);
+}
+.plans-page plan .features .feature .no {
+  color: var(--red-color);
 }

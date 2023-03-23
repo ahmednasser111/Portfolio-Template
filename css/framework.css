@@ -209,3 +209,6 @@
 .border-eee {
   border: 1px solid #eee;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
