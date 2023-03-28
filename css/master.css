@@ -194,13 +194,12 @@ nav .icons img {
   padding: 2px;
   box-shadow: 0 0 5px #ddd;
   border-radius: 50%;
-  position: relative;
-  top: -32px;
-  left: 20px;
+  margin-left: 20px;
+  margin-top: -32px;
 }
 @media (max-width: 767px) {
   .welcome .avatar {
-    left: 0;
+    margin-left: 0;
   }
 }
 .welcome .body {
@@ -265,7 +264,7 @@ nav .icons img {
 }
 .targets .target:first-of-type .progress-handler > span,
 .targets .target:first-of-type .progress-handler > span span,
-.targets .target:last-of-type .progress-handler > span span::before {
+.targets .target:first-of-type .progress-handler > span span::before {
   background-color: var(--blue-color);
 }
 .targets .target:nth-of-type(2) .progress-handler > span,
@@ -301,8 +300,6 @@ nav .icons img {
 }
 .targets .target:last-of-type .progress-handler > span span::before {
   border-top-color: var(--green-color);
-}
-.tickets > p {
 }
 .tickets .box {
   border: 1px solid #ccc;
